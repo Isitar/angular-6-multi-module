@@ -1,0 +1,15 @@
+<h1>Player List</h1>
+
+<table>
+  <thead>
+  <tr><th>Id</th><th>Name</th><th>Adresse</th><th></th></tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let player of players">
+    <td>{{player.id}}</td>
+    <td>{{player.name}}</td>
+    <td>{{player.address}}</td>
+    <th><a routerLink="{{player.id}}">Detail</a> </th>
+  </tr>
+  </tbody>
+</table>

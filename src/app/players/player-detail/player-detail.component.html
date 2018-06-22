@@ -1,0 +1,7 @@
+<h1>Player Detail</h1>
+<a [routerLink]="['']">Back</a>
+<div *ngIf="player">
+  <div>Id: {{player.id}}</div>
+  <div>Name: {{player.name}}</div>
+  <div>Address: {{player.address}}</div>
+</div>
