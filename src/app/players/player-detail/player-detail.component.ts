@@ -26,8 +26,7 @@ export class PlayerDetailComponent implements OnInit {
       err => {
         if (err !== null) console.log(err)
       }
-    )
-    ;
+    );
   }
 
 }

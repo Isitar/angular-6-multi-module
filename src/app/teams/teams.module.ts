@@ -1,14 +1,16 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { TeamsRoutingModule } from './teams-routing.module';
-import { TeamsListComponent } from './teams-list/teams-list.component';
+import {TeamsRoutingModule} from './teams-routing.module';
+import {TeamListComponent} from './team-list/team-list.component';
+import { TeamDetailComponent } from './team-detail/team-detail.component';
 
 @NgModule({
   imports: [
     CommonModule,
     TeamsRoutingModule
   ],
-  declarations: [TeamsListComponent]
+  declarations: [TeamListComponent, TeamDetailComponent]
 })
-export class TeamsModule { }
+export class TeamsModule {
+}

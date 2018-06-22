@@ -1,12 +1,17 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {TeamsListComponent} from "./teams-list/teams-list.component";
+import {TeamDetailComponent} from "./team-detail/team-detail.component";
+import {TeamListComponent} from "./team-list/team-list.component";
 
 const routes: Routes = [
   {
     path: '',
-    component: TeamsListComponent,
-  }
+    component: TeamListComponent,
+  },
+  {
+    path: ':id',
+    component: TeamDetailComponent,
+  },
 ];
 
 @NgModule({
