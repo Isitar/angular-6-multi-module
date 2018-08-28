@@ -12,7 +12,7 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent
-  }
+  },
   {
     path: 'teams',
     loadChildren: () => TeamsModule,
@@ -20,7 +20,7 @@ const routes: Routes = [
   {
     path: 'players',
     loadChildren: () => PlayersModule,
-  }
+  },
 
 ];
 
